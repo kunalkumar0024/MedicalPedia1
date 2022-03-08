@@ -1,0 +1,1525 @@
+1. Welcome Page
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+ 
+
+body {
+  font-family: "Oswald", sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  background-color: #b074d9c4;
+  text-align: center;
+}
+
+h1 {
+  line-height: .95;
+ 
+  font-weight: 900;
+  font-size: 105px;
+  text-transform: uppercase;
+ 
+  color: #b57bde;
+   text-shadow: -8px -8px 12px rgb(207 166 237 / 94%), 8px 8px 12px rgb(70 5 75 / 56%);
+   caret-color:#262626;
+   outline: none;
+}
+
+.center {
+   width: 100%;
+  height: 100%;
+ 
+  
+  display :inline-block;
+  justify-content :center;
+  align-items: center;
+}
+
+.btn {
+   display: inline-block;
+  margin: 0 auto;
+  width: 175px;
+  height: 60px;
+  padding: 6px 0 0 3px;
+ background-color: #b57bde;
+   box-shadow: -8px -8px 12px rgb(207 166 237 / 94%), 8px 8px 12px rgb(145 92 166);
+  border-radius: 40px;
+ 
+  font-size: 16px;
+  line-height: 54px;
+  color: #fff;
+  letter-spacing: .25em;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #8a30b4;
+  color: #dab1ec;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.button{
+    margin: 5px;
+ 
+}
+</style>
+<body>
+<div class="center">
+             <h1>WELCOME <br>to <br>medical pedia</h1>
+           <div class="button">
+            <div class="btn"><a href="register.jsp"> Register</div></a>
+             <div class="btn"><a href="login.jsp"> Log in</div></a>
+          </div>
+        </div>
+</body>
+</html>
+
+
+2. Register page
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+ background-color: #b074d9c4;
+}
+
+* {
+  box-sizing: border-box;
+  
+}
+
+.container {
+    padding: 20px;
+      width:560px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+     border-radius: 10px;
+        background:  #c294e1;
+  
+ box-shadow: -9px 9px 17px #9748bc, 9px -9px 17px #dfbdf4;
+   height: 20px 0px; 
+  
+ 
+  
+  }
+
+/* Full-width input fields */
+input[type=text], input[type=password],input[type=date] ,input[type=email]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0px 10px 0px;
+  display: inline-block;
+  border: none;
+ background: #c294e1;
+  border-radius: 20px;
+   box-shadow: inset 7px 2px 10px #b387c4, inset -5px -5px 12px rgb(113 38 135 / 60%);
+    color: black;
+    font-weight: bolder;
+  padding: 15px 20px;
+}
+
+
+
+
+input[type=text]:focus, input[type=password]:focus,input[type=date]:focus ,input[type=email]:focus {
+ background-color: #debbf5;
+outline: none;
+ 
+}
+
+
+/* Set a style for the submit button */
+.registerbtn {
+background-color:  #c294e1;
+  color: rgb(0, 0, 0);
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+box-shadow: 0px -2px 10px #edb1ff, 12px 4px 12px rgb(123 25 184 / 60%);
+    font-weight: bolder;
+    border-radius: 20px;
+
+}
+
+
+.registerbtn:hover {
+  opacity: 1;
+}
+.registerbtn:focus{
+  background-color:  #bf84da;
+  box-shadow: 0px -2px 10px #edb1ff, 12px 4px 12px rgb(123 25 184 / 60%);
+}
+
+::placeholder { 
+  color: rgb(0, 0, 0);
+  
+}
+a{
+    color: black;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<form action="registerAction" method="post">
+  <div class="container">
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+<label for="uname"><b>Name</b></label>
+    <input type="text" placeholder="Enter name" name="uname" id="uname" required>
+    
+<label for="age"><b>Age</b></label>
+<input type="text" placeholder="Enter age" name="uage" id="uage" required>
+
+    
+    <label for="udob"><b>Date of birth</b></label>
+    <input type="date" placeholder="Date of Birth" name="udob" id="udpb" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="email" placeholder="Enter Email" name="uemail" id="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="upassword" id="psw" required>
+
+     
+    <button type="submit" class="registerbtn">Register</button>
+    
+                <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="login.jsp" class="fw-bold text-body"><u>Login here</u></a></p>
+  </div>
+  
+ 
+</form>
+
+</body>
+</html>
+
+3. Login page
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+body {
+font-family: Arial, Helvetica, sans-serif;
+background-color: #b074d9c4;
+}
+
+* {
+box-sizing: border-box;
+
+}
+
+.container {
+padding: 20px;
+  width:500px;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+
+
+    padding: 40px 30px;
+    background:  #c294e1;
+
+    border-radius: 10px;
+    box-shadow: -9px 9px 17px #9748bc, 9px -9px 17px #dfbdf4;
+
+
+
+}
+
+/* Full-width input fields */
+input[type=date],input[type=password],input[type=email]{
+width: 100%;
+padding: 15px;
+margin: 18px 0px 19px 0px;
+display: inline-block;
+border: none;
+background: #c294e1;
+border-radius: 20px;
+box-shadow: inset 7px 2px 10px #b387c4, inset -5px -5px 12px rgb(113 38 135 / 60%);
+color: black;
+font-weight: bolder;
+padding: 20px 20px;
+}
+
+
+
+
+input[type=password]:focus,input[type=email]:focus {
+background-color: #debbf5;
+outline: none;
+
+}
+
+
+
+
+/* Set a style for the submit button */
+.loginbtn {
+background-color:  #c294e1;
+color: rgb(0, 0, 0);
+padding: 16px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+opacity: 0.9;
+box-shadow: 0px -2px 10px #edb1ff, 12px 4px 12px rgb(123 25 184 / 60%);
+font-weight: bolder;
+border-radius: 20px;
+
+}
+
+.loginbtn:hover {
+opacity: 1;
+font-weight: bolder;
+}
+
+.loginbtn:focus{
+  background-color:  #bf84da;
+  box-shadow: 0px -2px 10px #edb1ff, 12px 4px 12px rgb(123 25 184 / 60%);
+}
+
+::placeholder { 
+color: rgb(0, 0, 0);
+
+}
+
+
+
+
+
+
+</style>
+</head>
+<body>
+
+<form action="loginAction" method="post">
+  <div class="container">
+    <h1>Login</h1>
+    <p>Welcome back....</p>
+    <hr>
+
+
+    <label for="email"><b>Email</b></label>
+    <input type="email" placeholder="Enter Email" name="uemail" id="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="upassword" id="psw" required>
+
+     
+    <button type="submit" class="loginbtn">Log in</button>
+    
+                <p class="text-center text-muted mt-5 mb-0">Don't have an account<a href="register.jsp" class="fw-bold text-body"><u>Create here</u></a></p>
+  </div>
+  
+ 
+</form>
+
+</body>
+</html>
+
+
+4. admin page
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style></style>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+  body{
+    background-color: #b074d9c4;
+        box-sizing: border-box;
+        font-family: 'Raleway', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    header{
+        width: 100%;
+        height: 70px;
+        color: #ffffff;
+        display: flex;
+    }
+    .part{
+        width: 50%;
+        height: 70px
+    }
+    .head-item-1{
+        margin-left: 15px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 70px
+    }
+    .head-item-1 .headname{
+        color: rgb(255, 255, 255);
+        margin-left: 20px;
+        height: 70px;
+    }
+    .head-item-1 .logo{
+        width: 50px;
+        height: 50px;
+    
+    }
+    .head-item-1 .logo img{
+        width: 50px;
+        height: 50px;
+    }
+    
+    
+    .head-item{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 70px
+    }
+    
+    .head-item .nav ul{
+        margin: 0;
+        padding: 0;
+    }
+    .head-item .nav li{
+        display: inline;
+        margin-right: 50px;
+    }
+    .head-item .nav li a{
+        text-decoration: none;
+        color: rgb(254, 253, 255);
+        font-size: 18px;
+    }
+    
+    
+    /*---------*/
+    
+    section{
+        width: 100%;
+        height: 600px;
+        margin-top: 70px;
+    }
+    .container {
+        width: 774px;  /* 400*/
+        height: 539px; /*300*/
+        padding: 50px;
+    
+        margin: auto;
+        box-sizing: border-box;
+        border-radius: 10px;
+        
+
+        background:  #c294e1;
+
+border-radius: 10px;
+box-shadow: -9px 9px 17px #9748bc, 9px -9px 17px #dfbdf4;
+    
+        
+      }
+    
+    .head{
+        text-align: center;
+        margin-bottom: 80px;
+    }
+    
+    .head h2 {
+        margin-top: 0;
+        font-size: 31px;
+        color: #ffffff;
+        font-weight: bold;
+    }
+    
+    .item{
+        width: 660px;
+        height: 200px;
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    
+    .item .item-box{
+        width: 200px;
+        height: 200px;
+        border-radius: 28px;
+        background: #c294e1;
+        box-shadow: -9px 9px 17px #9748bc, 9px -9px 17px #dfbdf4;
+        margin: 0;
+        transition: 0.5s;
+        
+    }
+    
+    .item .item-box:hover{
+      transform: scale(1.2);
+    }
+    .item-box .icon-wrapper{
+        width: 62px;
+        height: 62px;
+        margin: 0 auto;
+        padding-top:38px ;
+        padding-bottom: 19px;
+    }
+    
+    .item-box .icon-wrapper img{
+        width: 62px;
+        height: 62px;
+    }
+    
+    .text{
+        text-align: center;
+    }
+    
+    .text h3{
+        font-size: 20px;
+        color: #ffffff;
+        margin: 0;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      
+    }
+    
+    #navbar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-size: 20px;
+      font-family: Roboto;
+      background: #c294e1;
+      padding: 20px;
+      box-shadow: -9px 9px 17px #9748bc, 9px -9px 17px #dfbdf4;
+    }
+    
+    nav ul{
+      list-style-type:none;
+      display:flex;
+    }
+    
+    nav input{
+        background: #c294e1;
+        border: none;
+        color: white;
+        padding: 5px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 0px 4px;
+        cursor: pointer;
+        box-shadow: -9px 9px 17px #9748bc, 9px -9px 17px #dfbdf4;
+        border-radius: 28px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      
+    }
+    nav input:focus{
+        background-color:  #bf84da;
+    }
+    
+   nav a{
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     text-decoration: none;
+     background: #c294e1;
+        border: none;
+        color: white;
+        padding: 5px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 0px 4px;
+        cursor: pointer;
+        box-shadow: -9px 9px 17px #9748bc, 9px -9px 17px #dfbdf4;
+        border-radius: 28px;
+    }
+    nav a:focus{
+        background-color:  #bf84da;
+    }
+    .container a{
+        text-decoration: none;
+        color: #ffffff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #navbar-brand h3{
+        color: #ffffff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    
+</style>
+<body>
+    
+
+<% 
+if(session.getAttribute("uemail")==null){
+   response.sendRedirect("register.jsp");
+}
+%>
+
+        <div id="navbar">
+            <div id="navbar-brand">
+              <h3 >ADMIN</h3>
+            </div>
+           
+            <nav>
+            
+              <ul>
+                
+               <li><a href="HomePage.jsp">Home page</a></li>
+               
+                <li>
+                 <form action="logoutAction">
+                    <input type="submit"value="logout">
+                      </form>
+                </li> 
+              </ul>
+            </nav>
+          
+          </div>
+        </div>
+     <section class="ptr-1">
+        <div class="container">
+            <div class="head">
+                <h2>WELCOME</h2>
+            </div>
+    
+            <div class="item">
+                <div class="item-box">
+                    <div class="icon-wrapper">
+                        <img src="https://cdn-icons-png.flaticon.com/128/4689/4689700.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h3><a href="addproduct.jsp">ADD PRODUCT</a>  <br>
+                            
+                        </h3>
+                    </div>
+                </div>
+                <div class="item-box">
+                    <div class="icon-wrapper">
+                        <img src="https://cdn-icons.flaticon.com/png/128/5444/premium/5444677.png?token=exp=1643637756~hmac=016c9ac66599b3f36266759b8401ffcc" alt="">
+                    </div>
+                    <div class="text">
+                        <h3><a href="removeProduct.jsp">REMOVE PRODUCT</a>  <br>
+                           
+                        </h3>
+                    </div>
+                </div>
+               
+            
+            </div>
+    
+            
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
+      
+</body>
+</html>
+
+5. addProduct page
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+background-color: #b074d9c4;
+}
+
+* {
+box-sizing: border-box;
+
+}
+
+.container {
+padding: 20px;
+  width:500px;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+
+
+    padding: 40px 30px;
+    background:  #c294e1;
+
+    border-radius: 10px;
+    box-shadow: -9px 9px 17px #9748bc, 9px -9px 17px #dfbdf4;
+
+
+
+}
+
+/* Full-width input fields */
+input[type=text]{
+width: 100%;
+padding: 15px;
+margin: 18px 0px 19px 0px;
+display: inline-block;
+border: none;
+background: #c294e1;
+border-radius: 20px;
+box-shadow: inset 7px 2px 10px #b387c4, inset -5px -5px 12px rgb(113 38 135 / 60%);
+color: black;
+font-weight: bolder;
+padding: 20px 20px;
+}
+
+
+
+
+input[type=text]:focus{
+background-color: #debbf5;
+outline: none;
+
+}
+
+
+
+
+/* Set a style for the submit button */
+.addbtn {
+background-color:  #c294e1;
+color: rgb(0, 0, 0);
+padding: 16px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+opacity: 0.9;
+box-shadow: 0px -2px 10px #edb1ff, 12px 4px 12px rgb(123 25 184 / 60%);
+font-weight: bolder;
+border-radius: 20px;
+
+}
+
+
+.addbtn:hover {
+opacity: 1;
+
+font-weight: bolder;
+
+}
+.addbtn:focus{
+  background-color:  #bf84da;
+  box-shadow: 0px -2px 10px #edb1ff, 12px 4px 12px rgb(123 25 184 / 60%);
+}
+::placeholder { 
+color: rgb(0, 0, 0);
+
+}
+
+
+</style>
+
+<body>
+<form enctype="multipart/form-data" action="AddProAction" method="post">
+  <div class="container">
+    <h1>ADD PRODUCT</h1>
+    <p>Welcome back....</p>
+    <hr>
+    
+      
+    <label for="pid"><b>Product ID</b></label>
+    <input type="text" placeholder="Product id" name="pid" id="pid" required>
+
+    <label for="pname"><b>Product name</b></label>
+    <input type="text" placeholder="Product name" name="pname" id="pname" required>
+
+    <label for="pprice"><b>Price</b></label>
+    <input type="text" placeholder="Product price" name="pprice" id="pprice" required>
+    
+     <label for="pprice"><b>Product Image</b></label>
+     <input type="file" id="myFile" name="pimage" required>
+     
+    <button type="submit" class="addbtn">Submit</button>
+    
+                
+  </div>
+  
+ 
+</form>
+</body>
+</html>
+
+6. productDetail page
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Pedia</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+   
+
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+    --green:#27ae60;
+    --black:#192a56;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+    background: #f0c4ff99;
+   
+}
+
+section{
+    padding:2rem 9%;
+}
+
+section:nth-child(even){
+    background:#eee;
+}
+
+.sub-heading{
+    text-align: center;
+    color:#a656b0;
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.heading{
+    text-align: center;
+    color:var(--black);
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color:#fff;
+    background: #a656b0;
+    border-radius: .5rem;
+    cursor: pointer;
+    padding:.8rem 3rem;
+}
+
+.btn:hover{
+    background: #501c74;
+    letter-spacing: .1rem;
+}
+
+header{
+    position: fixed;
+    top:0; left: 0; right:0;
+    background: #fff;
+    padding:1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+        box-shadow: -9px 9px 17px #b985d1, 9px -9px 17px #dfbdf4;
+}
+
+header .logo{
+    color:#ae68ba;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+header .logo i{
+    color:#ae68ba;
+}
+
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    color:var(--light-color);
+}
+
+header .navbar a.active,
+header .navbar a:hover{
+    color:#fff;
+    background: #c373d2;
+}
+
+header .icons i,
+header .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height:4.5rem;
+    line-height: 4.5rem;
+    width:4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color:#a656b0;
+    border-radius: 50%;
+    background: #eee;
+}
+
+header .icons i:hover,
+header .icons a:hover{
+    color:#fff;
+    background: #da8ae4;
+    transform: rotate(360deg);
+}
+
+header .icons #menu-bars{
+    display: none;
+}
+
+#search-form{
+    position: fixed;
+    top:-110%; left:0; 
+    height:100%; width:100%;
+    z-index: 1004;
+    background:rgba(0,0,0,.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0 1rem;
+}
+
+#search-form.active{
+    top:0;
+}
+
+#search-form #search-box{
+    width:50rem;
+    border-bottom: .1rem solid #fff;
+    padding:1rem 0;
+    color:#fff;
+    font-size: 3rem;
+    text-transform: none;
+    background:none;
+}
+
+#search-form #search-box::placeholder{
+    color:#eee;
+}
+
+#search-form #search-box::-webkit-search-cancel-button{
+    -webkit-appearance: none;
+}
+
+#search-form label{
+    color:#fff;
+    cursor:pointer;
+    font-size: 3rem;
+}
+
+#search-form label:hover{
+    color:var(--green);
+}
+
+#search-form #close{
+    position: absolute;
+    color:#fff;
+    cursor: pointer;
+    top: 2rem; right:3rem;
+    font-size: 5rem;
+}
+
+.swiper-pagination-bullet-active{
+    background:var(--green);
+}
+
+.dishes .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap:1.5rem;
+}
+
+.dishes .box-container .box{
+    padding:2.5rem;
+    background:#fff;
+    border-radius: .5rem;
+    border:.1rem solid rgba(0,0,0,.2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+     text-align: center; 
+  box-shadow: inset -4px -6px 10px rgb(157 72 139), inset 25px 21px 23px rgb(168 80 168 / 37%);
+    
+}
+
+.dishes .box-container .box .fa-heart,
+.dishes .box-container .box .fa-eye{
+    position: absolute;
+    top:1.5rem;
+    background:#eee;
+    border-radius: 50%;
+    height: 5rem;
+    width:5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color:#a656b0;
+}
+
+.dishes .box-container .box .fa-heart:hover,
+.dishes .box-container .box .fa-eye:hover{
+    color:#fff;
+    background: #da8ae4;
+}
+
+.dishes .box-container .box .fa-heart{
+    right:-15rem;
+}
+
+.dishes .box-container .box .fa-eye{
+    left:-15rem;
+}
+
+.dishes .box-container .box:hover .fa-heart{
+    right:1.5rem;
+}
+
+.dishes .box-container .box:hover .fa-eye{
+    left:1.5rem;
+}
+
+.dishes .box-container .box img{
+    height:17rem;
+    margin:1rem 0;
+}
+
+.dishes .box-container .box h3{
+    color:#792a83;
+    font-size: 2.5rem;
+}
+
+.dishes .box-container .box .stars{
+    padding:1rem 0;
+}
+
+.dishes .box-container .box .stars i{
+    font-size: 1.7rem;
+    color:#a656b0;
+}
+
+.dishes .box-container .box span{
+    color:#ae27a4;
+    font-weight: bolder;
+    margin-right: 1rem;
+    font-size: 2.5rem;
+}
+
+.about .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+}
+
+.about .row .image{
+    flex:1 1 45rem;
+}
+
+.about .row .image img{ 
+    width: 100%;
+}
+
+.about .row .content{
+    flex:1 1 45rem;
+}
+
+.about .row .content h3{
+    color:var(--black);
+    font-size: 4rem;
+    padding:.5rem 0;
+}
+
+.about .row .content p{
+    color:var(--light-color);
+    font-size: 1.5rem;
+    padding:.5rem 0;
+    line-height: 2;
+}
+
+.about .row .content .icons-container{
+    display: flex;
+    gap:1rem;
+    flex-wrap: wrap;
+    padding:1rem 0;
+    margin-top: .5rem;
+}
+
+.about .row .content .icons-container .icons{
+    background:#eee;
+    border-radius: .5rem;
+    border:.1rem solid rgba(0,0,0,.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    flex:1 1 17rem;
+    padding:1.5rem 1rem;
+}
+
+.about .row .content .icons-container .icons i{
+    font-size: 2.5rem;
+    color:#9327ae;
+}
+
+.about .row .content .icons-container .icons span{
+    font-size: 1.5rem;
+    color:var(--black);
+}
+
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:1.5rem;
+}
+
+.footer .box-container .box h3{
+    padding:.5rem 0;
+    font-size: 2.5rem;
+    color:var(--black);
+}
+
+.footer .box-container .box a{
+    display: block;
+    padding:.5rem 0;
+    font-size: 1.5rem;
+    color:var(--light-color);
+}
+
+.footer .box-container .box a:hover{
+    color:var(--green);
+    text-decoration: underline;
+}
+
+.footer .credit{
+    text-align: center;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    font-size: 2rem;
+    color:var(--black);
+    padding:.5rem;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.footer .credit span{
+    color:var(--green);
+}
+
+/* media queries  */
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+    
+    header{
+        padding:1rem 2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+
+}
+
+@media (max-width:768px){
+
+    header .icons #menu-bars{
+        display: inline-block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top:100%; left:0; right:0;
+        background:#fff;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        border-bottom: .1rem solid rgba(0,0,0,.2);
+        padding:1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a{
+        display: block;
+        padding:1.5rem;
+        margin:1rem;
+        font-size: 2rem;
+        background:#eee;
+    }
+
+    #search-form #search-box{
+        width:90%;
+        margin:0 1rem;
+    }
+
+    .home .home-slider .slide .content h3{
+        font-size: 5rem;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .dishes .box-container .box img{
+        height:auto;
+        width: 100%;
+    }
+
+    .order form .inputBox .input{
+        width:100%;
+    }
+
+}
+
+
+</style>
+<body>
+
+<header>
+
+    <a href="#" class="logo"><i class="fa fa-medkit"></i>Medstore</a>
+
+    <nav class="navbar">
+        <a class="active" href="HomePage.jsp">home</a>
+        
+        <a href="#about">about</a>
+        <a href="login.jsp">logout</a>
+       
+       
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+    </div>
+
+</header>
+
+<!-- header section ends-->
+
+<!-- search form  -->
+
+<div id="search-form">
+    <input type="search" placeholder="search here..." name="" id="search-box">
+    <label for="search-box" class="fas fa-search"></label>
+    <i class="fas fa-times" id="close"></i>
+</div><br><br><br><br>
+
+
+
+<!-- medicine section starts  -->
+
+<section class="dishes" id="dishes">
+
+  
+    <h1 class="heading"> popular medicines </h1>
+ 
+<%
+ if(session.getAttribute("uemail")==null){
+   response.sendRedirect("register.jsp");
+ }
+
+%>  
+
+ 
+
+
+    <div class="box-container">
+<%
+
+GetProducts get=new GetProducts();
+List<ProductDetail> list=get.getDetails();
+session.setAttribute("list", list);
+for(ProductDetail pro:list){
+%>
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="data:iamge/jpg;base64,<%=pro.getPimage() %>" alt="">
+            <h3><%=pro.getPname() %></h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span>Rs.<%=pro.getPprice() %></span>
+            <a href="#" class="btn">Buy</a>
+        </div>
+           
+   <%
+}
+    %>  
+    </div>
+  
+</section>
+
+<!-- medicines section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h3 class="sub-heading"> about us </h3>
+    <h1 class="heading"> why choose us? </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="https://img.freepik.com/free-vector/human-hand-holding-mobile-phone-medicine-online-payment-home-delivery-pharmacy-service-pharmacist-with-paper-bag-with-pills-bottle-medicines-drugs-thermometer-inside_458444-258.jpg?size=626&ext=jpg" alt="">
+        </div>
+
+        <div class="content">
+            <h3>best quality medicines in the country</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, sequi corrupti corporis quaerat voluptatem ipsam neque labore modi autem, saepe numquam quod reprehenderit rem? Tempora aut soluta odio corporis nihil!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, nemo. Sit porro illo eos cumque deleniti iste alias, eum natus.</p>
+            <div class="icons-container">
+                <div class="icons">
+                    <i class="fas fa-shipping-fast"></i>
+                    <span>free delivery</span>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-dollar-sign"></i>
+                    <span>easy payments</span>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-headset"></i>
+                    <span>24/7 service</span>
+                </div>
+            </div>
+            <a href="#" class="btn">learn more</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+
+
+<!-- review section ends -->
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>locations</h3>
+            <a href="#">india</a>
+            <a href="#">japan</a>
+            <a href="#">russia</a>
+            <a href="#">USA</a>
+            <a href="#">france</a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="HomePage.jsp">home</a>          
+            <a href="#">about</a>
+            <a href="login.jsp">login</a>
+        <a href="register.jsp">register</a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#">+123-456-7890</a>
+            <a href="#">+111-222-3333</a>
+            <a href="#">amritarimu@gmail.com</a>
+            <a href="#">amritarimu@gmail.com</a>
+            <a href="#">Odisha, india - 400104</a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">twitter</a>
+            <a href="#">instagram</a>
+            <a href="#">linkedin</a>
+        </div>
+
+    </div>
+
+    <div class="credit"> copyright @ 2022 by <span>medical.pedia</span> </div>
+
+</section>
+</ProductDetail>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+
+<script>
+  let menu = document.querySelector('#menu-bars');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = () =>{
+  menu.classList.toggle('fa-times');
+  navbar.classList.toggle('active');
+}
+
+let section = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('header .navbar a');
+
+window.onscroll = () =>{
+
+  menu.classList.remove('fa-times');
+  navbar.classList.remove('active');
+
+  section.forEach(sec =>{
+
+    let top = window.scrollY;
+    let height = sec.offsetHeight;
+    let offset = sec.offsetTop - 150;
+    let id = sec.getAttribute('id');
+
+    if(top >= offset && top < offset + height){
+      navLinks.forEach(links =>{
+        links.classList.remove('active');
+        document.querySelector('header .navbar a[href*='+id+']').classList.add('active');
+      });
+    };
+
+  });
+
+}
+
+document.querySelector('#search-icon').onclick = () =>{
+  document.querySelector('#search-form').classList.toggle('active');
+}
+
+document.querySelector('#close').onclick = () =>{
+  document.querySelector('#search-form').classList.remove('active');
+}
+
+var swiper = new Swiper(".home-slider", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 7500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  loop:true,
+});
+
+
+</script>
+          
+          
+</body>
+</html>
